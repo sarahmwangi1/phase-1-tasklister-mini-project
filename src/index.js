@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("create-task-form");
+// Select form and add event listener without DOMContentLoaded
+const form = document.getElementById("create-task-form");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // prevent page from refreshing on submit
@@ -21,4 +21,4 @@ function buildToDo(task) {
   // Append the li to the task list
   taskList.appendChild(li);
 }
-});
+
